@@ -9,8 +9,10 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
-import { db } from "@acme/db/client";
-import { getSession, type Session } from "@acme/auth";
+
+import type { Session } from "@acme/auth";
+import { getSession } from "@acme/auth";
+import { prisma } from "@acme/db/client";
 
 /**
  * Isomorphic Session getter for API requests
@@ -18,7 +20,7 @@ import { getSession, type Session } from "@acme/auth";
  * - Next.js requests will have a session token in cookies
  */
 const isomorphicGetSession = async (headers: Headers) => {
-  return await getSession()
+  return await getSession();
 };
 
 /**
@@ -45,7 +47,7 @@ export const createTRPCContext = async (opts: {
 
   return {
     session,
-    db,
+    db: prisma,
     token: authToken,
   };
 };

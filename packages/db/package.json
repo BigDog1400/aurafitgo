@@ -19,31 +19,21 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "tsc",
-    "format": "prettier --check . --ignore-path ../../.gitignore",
-    "lint": "eslint",
-    "push": "pnpm with-env drizzle-kit push",
-    "studio": "pnpm with-env drizzle-kit studio",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
-    "with-env": "dotenv -e ../../.env --"
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:studio": "prisma studio",
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prisma format",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit",
+    "postinstall": "prisma generate --schema prisma/schema.prisma"
   },
   "dependencies": {
-    "@vercel/postgres": "^0.10.0",
-    "drizzle-orm": "^0.35.1",
-    "drizzle-zod": "^0.5.1",
-    "zod": "catalog:"
+    "@prisma/client": "^5.14.0"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
-    "dotenv-cli": "^7.4.2",
-    "drizzle-kit": "^0.26.2",
-    "eslint": "catalog:",
-    "prettier": "catalog:",
+    "@types/node": "^20.16.11",
+    "prisma": "^5.14.0",
     "typescript": "catalog:"
-  },
-  "prettier": "@acme/prettier-config"
+  }
 }

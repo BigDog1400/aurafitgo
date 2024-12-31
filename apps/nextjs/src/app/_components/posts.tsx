@@ -1,7 +1,8 @@
 "use client";
 
+import { z } from "zod";
+
 import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
 import { cn } from "@acme/ui";
 import { Button } from "@acme/ui/button";
 import {
@@ -19,7 +20,10 @@ import { api } from "~/trpc/react";
 
 export function CreatePostForm() {
   const form = useForm({
-    schema: CreatePostSchema,
+    schema: z.object({
+      content: z.string().min(1),
+      title: z.string().min(1),
+    }),
     defaultValues: {
       content: "",
       title: "",
@@ -125,8 +129,10 @@ export function PostCard(props: {
   return (
     <div className="flex flex-row rounded-lg bg-muted p-4">
       <div className="flex-grow">
-        <h2 className="text-2xl font-bold text-primary">{props.post.title}</h2>
-        <p className="mt-2 text-sm">{props.post.content}</p>
+        <h2 className="text-2xl font-bold text-primary">{props.post.name}</h2>
+        <p className="mt-2 text-sm">
+          {props.post.createdAt.toLocaleDateString()}
+        </p>
       </div>
       <div>
         <Button
