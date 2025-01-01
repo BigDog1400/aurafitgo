@@ -1,0 +1,169 @@
+{
+  "name": "BigDog1400-aurafitgo Cursor Rules",
+  "description": "Combined Cursor AI rules for the BigDog1400-aurafitgo monorepo with Next.js 14, React, Shadcn UI, Radix UI, and Tailwind projects.",
+  "rules": {
+    "general": {
+      "react": {
+        "target": [
+          "*.tsx",
+          "*.jsx"
+        ],
+        "description": "Rules for React components, prefer functional components",
+        "suggestions": {
+          "useFunctionalComponents": "Suggest using functional components with hooks over class components.",
+          "useConsistentImports": "Ensure consistent import styles across components. Prefer top-level type imports."
+        }
+      },
+      "typescript": {
+        "target": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "description": "Rules for Typescript, promote type safety",
+        "suggestions": {
+          "useTypeSafety": "Emphasize type safety, prefer explicit types over 'any'",
+          "preferInterfaces": "Suggest using interfaces where applicable over type aliases.",
+          "consistentTypeImports": "Ensure that all type imports follow the same style. Prefer 'import type'."
+        }
+      },
+      "zodValidation": {
+        "target": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "description": "Rules for Zod Validations",
+        "suggestions": {
+          "useZodSchemas": "When performing any type of data validation use a Zod schema.",
+          "reuseZodSchemas": "Try to reuse existing Zod schemas when you have similar structures"
+        }
+      },
+      "fileStructure": {
+        "target": [
+          "*.tsx",
+          "*.ts"
+        ],
+        "description": "Rules for file structuring",
+        "suggestions": {
+          "fileStructurePattern": "Structure files: Exported component/function, subcomponents, helpers, static content, and types",
+          "descriptiveVariables": "Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)."
+        }
+      },
+      "typescriptSpecific": {
+        "target": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "description": "Specific TypeScript rules.",
+        "suggestions": {
+          "useInterfacesOverTypes": "Prefer interfaces over types for defining object shapes.",
+          "avoidEnums": "Avoid using enums; prefer maps or object literals instead.",
+          "explicitTypes": "Use explicit type annotations for improved readability and type safety."
+        }
+      },
+      "performance": {
+        "target": [
+          "*.tsx"
+        ],
+        "description": "Rules for performance optimization of react components",
+        "suggestions": {
+          "minimizeUseClient": "Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).",
+          "serverComponents": "Prefer server components and Next.js SSR features where possible",
+          "wrapSuspense": "Wrap client components in Suspense with fallback UI",
+          "dynamicLoading": "Use dynamic loading for non-critical components",
+          "optimizeImages": "Optimize images: use WebP format, include size data, implement lazy loading."
+        }
+      }
+    },
+    "expo": {
+      "components": {
+        "target": [
+          "apps/expo/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for Expo applications",
+        "suggestions": {
+          "useNativewind": "Suggest using NativeWind for styling.",
+          "useTRPC": "Utilize tRPC for type-safe API calls.",
+          "useExpoRouter": "Use Expo Router for navigation"
+        }
+      }
+    },
+    "nextjs": {
+      "components": {
+        "target": [
+          "apps/nextjs/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for Nextjs applications",
+        "suggestions": {
+          "useTRPC": "Utilize tRPC for type-safe API calls.",
+          "useServerComponents": "Prioritize server components where possible.",
+          "useMiddleware": "Use middleware for auth and other global logic.",
+          "preferEnvImports": "Always import env variables via the `~/env` to enforce type safety.",
+          "fetchApiFromTrpc": "Always call an API endpoint from the server and use the tRPC server methods."
+        }
+      }
+    },
+    "ui": {
+      "components": {
+        "target": [
+          "packages/ui/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for UI packages",
+        "suggestions": {
+          "useShadcnUI": "Suggest using components from shadcn/ui library"
+        }
+      }
+    },
+    "api": {
+      "methods": {
+        "target": [
+          "packages/api/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for tRPC API",
+        "suggestions": {
+          "usePublicProcedure": "Use publicProcedure only for public endpoints",
+          "useProtectedProcedure": "Use protectedProcedure for any endpoint that requires auth",
+          "useTRPCContext": "Ensure the correct context is passed to all the procedures."
+        }
+      }
+    },
+    "auth": {
+      "methods": {
+        "target": [
+          "packages/auth/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for better auth setup",
+        "suggestions": {
+          "useEnvVars": "Make sure you load the env variables correctly. Use `~/env`",
+          "useBetterAuth": "Use Better Auth's API to make any auth specific calls",
+          "serverSession": "Make use of the server session when necessary"
+        }
+      }
+    },
+    "db": {
+      "methods": {
+        "target": [
+          "packages/db/src/**/*.{ts,tsx}"
+        ],
+        "description": "Rules for Prisma database interaction",
+        "suggestions": {
+          "prismaClientUsage": "When interacting with the database, always make use of the prisma client",
+          "usePrismaSchema": "When making changes to the database, start by updating the schema"
+        }
+      }
+    },
+    "dataFetching": {
+      "methods": {
+        "target": [
+          "*.tsx"
+        ],
+        "description": "Rules for fetching data",
+        "suggestions": {
+          "addLoadingError": "Always add loading and error states to data fetching components",
+          "errorHandlingLogging": "Implement error handling and error logging",
+          "avoidUseClientForData": "Avoid use client for data fetching or state management",
+          "serverDataFetching": "Favor server data fetching in server components"
+        }
+      }
+    }
+  }
+}
