@@ -337,14 +337,14 @@ importers:
         specifier: 1.4.2
         version: 1.4.2
       '@better-auth/expo':
-        specifier: 0.7.3-beta.10
-        version: 0.7.3-beta.10(better-auth@0.7.4(react@18.3.1)(solid-js@1.9.3)(vue@3.5.12(typescript@5.6.3)))
+        specifier: 1.0.0
+        version: 1.0.0(better-auth@1.0.0)
       '@t3-oss/env-nextjs':
         specifier: ^0.11.1
         version: 0.11.1(typescript@5.6.3)(zod@3.23.8)
       better-auth:
-        specifier: 0.7.4
-        version: 0.7.4(react@18.3.1)(solid-js@1.9.3)(vue@3.5.12(typescript@5.6.3))
+        specifier: 1.0.0
+        version: 1.0.0
       next:
         specifier: ^14.2.15
         version: 14.2.15(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1338,10 +1338,10 @@ packages:
     peerDependencies:
       react-native: '*'
 
-  '@better-auth/expo@0.7.3-beta.10':
-    resolution: {integrity: sha512-J0hIYr9Tx27FAEZfckCKxQvkcrVi2WwmQDcqu8bNPeesfnUZywlaAMZw8CLturYsW4oTLT+Kxgv4WoMgMqx18Q==}
+  '@better-auth/expo@1.0.0':
+    resolution: {integrity: sha512-pWWT7S8RLICM3hfTqny2KWNinJKGhTHCHPtFfZvJo6ozw0J0YhkI9C/TuiaaBbGx+WaNAjcu+iiAZLgboxNxKQ==}
     peerDependencies:
-      better-auth: 0.7.3-beta.10
+      better-auth: 1.0.0
 
   '@better-fetch/fetch@1.1.12':
     resolution: {integrity: sha512-B3bfloI/2UBQWIATRN6qmlORrvx3Mp0kkNjmXLv0b+DtbtR+pP4/I5kQA/rDUv+OReLywCCldf6co4LdDmh8JA==}
@@ -1610,39 +1610,6 @@ packages:
 
   '@levischuck/tiny-cbor@0.2.2':
     resolution: {integrity: sha512-f5CnPw997Y2GQ8FAvtuVVC19FX8mwNNC+1XJcIi16n/LTJifKO6QBgGLgN3YEmqtGMk17SKSuoWES3imJVxAVw==}
-
-  '@nanostores/query@0.3.4':
-    resolution: {integrity: sha512-Gw5HsKflUDefhcZpVwVoIfw2Hz2+8FsInpVQOQ45EWz2FijaJll5aQWSE5JbYUsU/uAnYuKm5NM5ZgBH9HhniQ==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
-    peerDependencies:
-      nanostores: '>=0.10'
-
-  '@nanostores/react@0.8.0':
-    resolution: {integrity: sha512-MhbVB7NQLboq/Z9fRTDen9zib/YCffe6mn+3Xg5MOYByMX5Xx98SOZjk/Nd3yvOd/g7GjlQqwXj0KF2lPb6CEQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      nanostores: ^0.9.0 || ^0.10.0 || ^0.11.0
-      react: '>=18.0.0'
-
-  '@nanostores/solid@0.4.2':
-    resolution: {integrity: sha512-8v32+C9KdRbnvP4x4Oiw/CtL1tZwbRxYfmFsPIY9PXevCgxSFnicG6VnLLtNAR7F0kl8Ec7OROHO34Ffv0KDzg==}
-    peerDependencies:
-      nanostores: '>=0.8.0'
-      solid-js: ^1.6.0
-
-  '@nanostores/vue@0.10.0':
-    resolution: {integrity: sha512-832RAUbzRfHPs1CdqVEwfvgB2+RD/INji4Zo8bUSEfRO2pQRMMeq479gydnohGpRaa0oNwlfKo7TGFXCghq/1g==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      '@nanostores/logger': '>=0.2.3'
-      '@vue/devtools-api': '>=6.5.0'
-      nanostores: '>=0.9.2'
-      vue: '>=3.3.1'
-    peerDependenciesMeta:
-      '@nanostores/logger':
-        optional: true
-      '@vue/devtools-api':
-        optional: true
 
   '@next/env@14.2.15':
     resolution: {integrity: sha512-S1qaj25Wru2dUpcIZMjxeMVSwkt8BK4dmWHHiBuRstcIyOsMapqT4A4jSB6onvqeygkSSmOkyny9VVx8JIGamQ==}
@@ -2746,20 +2713,6 @@ packages:
   '@vue/compiler-ssr@3.5.12':
     resolution: {integrity: sha512-eLwc7v6bfGBSM7wZOGPmRavSWzNFF6+PdRhE+VFJhNCgHiF8AM7ccoqcv5kBXA2eWUfigD7byekvf/JsOfKvPA==}
 
-  '@vue/reactivity@3.5.12':
-    resolution: {integrity: sha512-UzaN3Da7xnJXdz4Okb/BGbAaomRHc3RdoWqTzlvd9+WBR5m3J39J1fGcHes7U3za0ruYn/iYy/a1euhMEHvTAg==}
-
-  '@vue/runtime-core@3.5.12':
-    resolution: {integrity: sha512-hrMUYV6tpocr3TL3Ad8DqxOdpDe4zuQY4HPY3X/VRh+L2myQO8MFXPAMarIOSGNu0bFAjh1yBkMPXZBqCk62Uw==}
-
-  '@vue/runtime-dom@3.5.12':
-    resolution: {integrity: sha512-q8VFxR9A2MRfBr6/55Q3umyoN7ya836FzRXajPB6/Vvuv0zOPL+qltd9rIMzG/DbRLAIlREmnLsplEF/kotXKA==}
-
-  '@vue/server-renderer@3.5.12':
-    resolution: {integrity: sha512-I3QoeDDeEPZm8yR28JtY+rk880Oqmj43hreIBVTicisFTx/Dl7JpG72g/X7YF8hnQD3IFhkky5i2bPonwrTVPg==}
-    peerDependencies:
-      vue: 3.5.12
-
   '@vue/shared@3.5.12':
     resolution: {integrity: sha512-L2RPSAwUFbgZH20etwrXyVyCBu9OxRSi8T/38QsvnkJyvq2LufW2lDCOzm7t/U9C1mkhJGWYfCuFBCmIuNivrg==}
 
@@ -3037,11 +2990,14 @@ packages:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
 
-  better-auth@0.7.4:
-    resolution: {integrity: sha512-42lunZmlj9x6IvkxPedocWPNvOEtHxJXXywAEuoJekvKvISI2zxDeRGxc8ES8wOU3NoCgBSVfpFS6/hCwfhXiA==}
+  better-auth@1.0.0:
+    resolution: {integrity: sha512-R//T+jrIMZk1hScFk4b+Z0hDPCh/vj4p9UyErWdRVsZQy5yn1bA/suHw76uLTeYdwDvoyvhbsgdoQ9MQ1z3Q/w==}
 
-  better-call@0.2.14-beta.3:
-    resolution: {integrity: sha512-lA54ETanzM0xUZnQt6lm3BdTr4gVDyAe1DNpCQSTYUnwnGGOmQG8ob0FYivVd0XHsHQK68r01GB5c6cUuu4llQ==}
+  better-call@0.2.15:
+    resolution: {integrity: sha512-IVT8Mraf+eu6hyCJNMyFVMWhvsmNyHjM4K2h7pZg1LEwZUkTpsfjIghjTq6YiGaooMUmTLK1C9eCEYMM2obW9w==}
+
+  better-call@0.3.2:
+    resolution: {integrity: sha512-ZYUADh4S4JF3QOIgC0QAm4N9Ifb7v3rOEcwkIxr3UXxd+GCrGmEzv7VDe35o1ldX0Zcb9CX3QfT0jdJoMIKA9w==}
 
   better-opn@3.0.2:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
@@ -5138,10 +5094,6 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoevents@9.1.0:
-    resolution: {integrity: sha512-Jd0fILWG44a9luj8v5kED4WI+zfkkgwKyRQKItTtlPfEsh7Lznfi1kr8/iZ+XAIss4Qq5GqRB0qtWbaz9ceO/A==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -6110,16 +6062,6 @@ packages:
     resolution: {integrity: sha512-ghgmKt5o4Tly5yEG/UJp8qTd0AN7Xalw4XBtDEKP655B699qMEtra1WlXeE6WIvdEG481JvRxULKsInq/iNysw==}
     engines: {node: '>=0.10.0'}
 
-  seroval-plugins@1.1.1:
-    resolution: {integrity: sha512-qNSy1+nUj7hsCOon7AO4wdAIo9P0jrzAMp18XhiOzA6/uO5TKtP7ScozVJ8T293oRIvi5wyCHSM4TrJo/c/GJA==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      seroval: ^1.0
-
-  seroval@1.1.1:
-    resolution: {integrity: sha512-rqEO6FZk8mv7Hyv4UCj3FD3b6Waqft605TLfsCe/BiaylRpyyMC0b+uA5TJKawX3KzMrdi3wsLbCaLplrQmBvQ==}
-    engines: {node: '>=10'}
-
   serve-static@1.16.2:
     resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
     engines: {node: '>= 0.8.0'}
@@ -6216,9 +6158,6 @@ packages:
   socks@2.8.3:
     resolution: {integrity: sha512-l5x7VUUWbjVFbafGLxPWkYsHIhEvmF85tbIeFZWc8ZPtoMyybuEhL7Jye/ooC4/d48FgOjSJXgsF/AJPYCW8Zw==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
-
-  solid-js@1.9.3:
-    resolution: {integrity: sha512-5ba3taPoZGt9GY3YlsCB24kCg0Lv/rie/HTD4kG6h4daZZz7+yK02xn8Vx8dLYBc9i6Ps5JwAbEiqjmKaLB3Ag==}
 
   sonner@1.5.0:
     resolution: {integrity: sha512-FBjhG/gnnbN6FY0jaNnqZOMmB73R+5IiyYAw8yBj7L54ER7HB3fOSE5OFiQiE2iXWxeXKvg6fIP4LtVppHEdJA==}
@@ -6835,14 +6774,6 @@ packages:
 
   vlq@1.0.1:
     resolution: {integrity: sha512-gQpnTgkubC6hQgdIcRdYGDSDc+SaujOdyesZQMv6JlfQee/9Mp0Qhnys6WxDWvQnL5WZdT7o2Ul187aSt0Rq+w==}
-
-  vue@3.5.12:
-    resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
 
   walker@1.0.8:
     resolution: {integrity: sha512-ts/8E8l5b7kY0vlWLewOkDXMmPdLcVV4GmOQLyxuSswIJsweeFZtAsMF7k1Nszz+TYBQrlYRmzOnr398y1JemQ==}
@@ -7997,9 +7928,11 @@ snapshots:
     dependencies:
       react-native: 0.74.6(@babel/core@7.25.8)(@babel/preset-env@7.25.8(@babel/core@7.25.8))(@types/react@18.3.11)(bufferutil@4.0.8)(react@18.3.1)
 
-  '@better-auth/expo@0.7.3-beta.10(better-auth@0.7.4(react@18.3.1)(solid-js@1.9.3)(vue@3.5.12(typescript@5.6.3)))':
+  '@better-auth/expo@1.0.0(better-auth@1.0.0)':
     dependencies:
-      better-auth: 0.7.4(react@18.3.1)(solid-js@1.9.3)(vue@3.5.12(typescript@5.6.3))
+      better-auth: 1.0.0
+      better-call: 0.2.15
+      zod: 3.23.8
 
   '@better-fetch/fetch@1.1.12': {}
 
@@ -8540,26 +8473,6 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   '@levischuck/tiny-cbor@0.2.2': {}
-
-  '@nanostores/query@0.3.4(nanostores@0.11.3)':
-    dependencies:
-      nanoevents: 9.1.0
-      nanostores: 0.11.3
-
-  '@nanostores/react@0.8.0(nanostores@0.11.3)(react@18.3.1)':
-    dependencies:
-      nanostores: 0.11.3
-      react: 18.3.1
-
-  '@nanostores/solid@0.4.2(nanostores@0.11.3)(solid-js@1.9.3)':
-    dependencies:
-      nanostores: 0.11.3
-      solid-js: 1.9.3
-
-  '@nanostores/vue@0.10.0(nanostores@0.11.3)(vue@3.5.12(typescript@5.6.3))':
-    dependencies:
-      nanostores: 0.11.3
-      vue: 3.5.12(typescript@5.6.3)
 
   '@next/env@14.2.15': {}
 
@@ -9932,11 +9845,13 @@ snapshots:
       entities: 4.5.0
       estree-walker: 2.0.2
       source-map-js: 1.2.1
+    optional: true
 
   '@vue/compiler-dom@3.5.12':
     dependencies:
       '@vue/compiler-core': 3.5.12
       '@vue/shared': 3.5.12
+    optional: true
 
   '@vue/compiler-sfc@3.5.12':
     dependencies:
@@ -9949,35 +9864,16 @@ snapshots:
       magic-string: 0.30.12
       postcss: 8.4.47
       source-map-js: 1.2.1
+    optional: true
 
   '@vue/compiler-ssr@3.5.12':
     dependencies:
       '@vue/compiler-dom': 3.5.12
       '@vue/shared': 3.5.12
+    optional: true
 
-  '@vue/reactivity@3.5.12':
-    dependencies:
-      '@vue/shared': 3.5.12
-
-  '@vue/runtime-core@3.5.12':
-    dependencies:
-      '@vue/reactivity': 3.5.12
-      '@vue/shared': 3.5.12
-
-  '@vue/runtime-dom@3.5.12':
-    dependencies:
-      '@vue/reactivity': 3.5.12
-      '@vue/runtime-core': 3.5.12
-      '@vue/shared': 3.5.12
-      csstype: 3.1.3
-
-  '@vue/server-renderer@3.5.12(vue@3.5.12(typescript@5.6.3))':
-    dependencies:
-      '@vue/compiler-ssr': 3.5.12
-      '@vue/shared': 3.5.12
-      vue: 3.5.12(typescript@5.6.3)
-
-  '@vue/shared@3.5.12': {}
+  '@vue/shared@3.5.12':
+    optional: true
 
   '@web3-storage/multipart-parser@1.0.0': {}
 
@@ -10296,18 +10192,14 @@ snapshots:
 
   basic-ftp@5.0.5: {}
 
-  better-auth@0.7.4(react@18.3.1)(solid-js@1.9.3)(vue@3.5.12(typescript@5.6.3)):
+  better-auth@1.0.0:
     dependencies:
       '@better-fetch/fetch': 1.1.12
-      '@nanostores/query': 0.3.4(nanostores@0.11.3)
-      '@nanostores/react': 0.8.0(nanostores@0.11.3)(react@18.3.1)
-      '@nanostores/solid': 0.4.2(nanostores@0.11.3)(solid-js@1.9.3)
-      '@nanostores/vue': 0.10.0(nanostores@0.11.3)(vue@3.5.12(typescript@5.6.3))
       '@noble/ciphers': 0.6.0
       '@noble/hashes': 1.5.0
       '@simplewebauthn/browser': 10.0.0
       '@simplewebauthn/server': 10.0.1
-      better-call: 0.2.14-beta.3
+      better-call: 0.3.2
       consola: 3.2.3
       defu: 6.1.4
       jose: 5.9.4
@@ -10318,14 +10210,17 @@ snapshots:
       uncrypto: 0.1.3
       zod: 3.23.8
     transitivePeerDependencies:
-      - '@nanostores/logger'
-      - '@vue/devtools-api'
       - encoding
-      - react
-      - solid-js
-      - vue
 
-  better-call@0.2.14-beta.3:
+  better-call@0.2.15:
+    dependencies:
+      '@better-fetch/fetch': 1.1.12
+      rou3: 0.5.1
+      set-cookie-parser: 2.7.1
+      uncrypto: 0.1.3
+      zod: 3.23.8
+
+  better-call@0.3.2:
     dependencies:
       '@better-fetch/fetch': 1.1.12
       rou3: 0.5.1
@@ -10908,7 +10803,8 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  entities@4.5.0: {}
+  entities@4.5.0:
+    optional: true
 
   env-editor@0.4.2: {}
 
@@ -11260,7 +11156,8 @@ snapshots:
 
   estraverse@5.3.0: {}
 
-  estree-walker@2.0.2: {}
+  estree-walker@2.0.2:
+    optional: true
 
   esutils@2.0.3: {}
 
@@ -12525,6 +12422,7 @@ snapshots:
   magic-string@0.30.12:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
+    optional: true
 
   make-dir@2.1.0:
     dependencies:
@@ -12830,8 +12728,6 @@ snapshots:
       any-promise: 1.3.0
       object-assign: 4.1.1
       thenify-all: 1.6.0
-
-  nanoevents@9.1.0: {}
 
   nanoid@3.3.7: {}
 
@@ -13861,12 +13757,6 @@ snapshots:
 
   serialize-error@2.1.0: {}
 
-  seroval-plugins@1.1.1(seroval@1.1.1):
-    dependencies:
-      seroval: 1.1.1
-
-  seroval@1.1.1: {}
-
   serve-static@1.16.2:
     dependencies:
       encodeurl: 2.0.0
@@ -13971,12 +13861,6 @@ snapshots:
     dependencies:
       ip-address: 9.0.5
       smart-buffer: 4.2.0
-
-  solid-js@1.9.3:
-    dependencies:
-      csstype: 3.1.3
-      seroval: 1.1.1
-      seroval-plugins: 1.1.1(seroval@1.1.1)
 
   sonner@1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -14630,16 +14514,6 @@ snapshots:
   vary@1.1.2: {}
 
   vlq@1.0.1: {}
-
-  vue@3.5.12(typescript@5.6.3):
-    dependencies:
-      '@vue/compiler-dom': 3.5.12
-      '@vue/compiler-sfc': 3.5.12
-      '@vue/runtime-dom': 3.5.12
-      '@vue/server-renderer': 3.5.12(vue@3.5.12(typescript@5.6.3))
-      '@vue/shared': 3.5.12
-    optionalDependencies:
-      typescript: 5.6.3
 
   walker@1.0.8:
     dependencies:
